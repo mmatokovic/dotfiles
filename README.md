@@ -19,12 +19,15 @@ git clone https://github.com/mmatokovic/dotfiles.git ~/.dotfiles
 Create symlinks in the Home directory to the real files in the repo
 
 ```Bash
-mklink ~/.dotfiles/.zshrc ~/.zshrc
+# With CMD
 mklink ~/.dotfiles/.gitconfig ~/.gitconfig
 mklink ~/.dotfiles/Microsoft.PowerShell_profile.ps1 ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+
+# With PowerShell
+New-Item -ItemType SymbolicLink -Path "~/.gitconfig" -Target "~/.dotfiles/.gitconfig"
 ```
 
 Enable hidden files on VS Code:
 
 On Windows, in VS Code, go to `File` > `Preferences` > `Settings`. To display hidden.
-Repo folder: `\source\repos`
+Create a repo folder: `mkdir ~/source/repos`
