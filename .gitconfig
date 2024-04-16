@@ -8,3 +8,5 @@
     path = ~/source/repos/crosig/.gitconfig
 [core]
 	longpaths = true
+[safe]
+	directory = *
