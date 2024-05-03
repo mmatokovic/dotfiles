@@ -1,4 +1,5 @@
-#$Home\Documents\WindowsPowerShell\Microsoft. PowerShell_profile. ps1
+# $Home\Documents\WindowsPowerShell\Microsoft. PowerShell_profile. ps1
+# notepad $PROFILE
 
 Import-Module posh-git
 Import-Module z
