@@ -1,0 +1,4 @@
+# Example for .gitattributes
+
+/config/CONFIG_PARAMETERS.properties merge=ours
+/**/*.cnf merge=ours
