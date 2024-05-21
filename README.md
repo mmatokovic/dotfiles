@@ -12,8 +12,7 @@ Using bootstrap script
 
 ```Bash
 Set-ExecutionPolicy RemoteSigned
-iwr https://raw.githubusercontent.com/lukesmith/dotfiles/master/script/bootstrap.ps1 -UseBasicParsing | iex
-streamline-linux
+iwr https://raw.githubusercontent.com/mmatokovic/dotfiles/main/scripts/bootstrap.ps1 -UseBasicParsing | iex
 ```
 
 ### Manualy
