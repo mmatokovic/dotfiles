@@ -32,8 +32,8 @@ Create symlinks in the Home directory to the real files in the repo
 
 ```Bash
 # PowerShell in Administrator mode
-New-Item -ItemType SymbolicLink -Path "~/.gitconfig" -Target "~/dotfiles/.gitconfig"
-New-Item -ItemType SymbolicLink -Path "~/.ideavimrc" -Target "~/dotfiles/.ideavimrc"
+New-Item -ItemType SymbolicLink -Path $env:UserProfile -Name ".gitconfig" -Target "~/.dotfiles/gitconfig"
+New-Item -ItemType SymbolicLink -Path "~/.ideavimrc" -Target "~/dotfiles/ideavimrc.symlink"
 ```
 
 Enable hidden files on VS Code:
