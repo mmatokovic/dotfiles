@@ -8,18 +8,26 @@ _  __  /_  __ \  __/_  /_ __  /__  /_  _ \_  ___/
 
 ## Install
 
-Using bootstrap script
+Using bootstrap script run in PowerShell **Administrator mode**
 
-```Bash
+```PowerShell
 Set-ExecutionPolicy RemoteSigned
 iwr https://raw.githubusercontent.com/mmatokovic/dotfiles/main/scripts/bootstrap.ps1 -UseBasicParsing | iex
+```
+
+open "`notepad $PROFILE`" and copy content from `Microsoft.PowerShell_profile.ps1`
+
+Reload PowerShell profile for current prompt
+
+```PowerShell
+. $PROFILE
 ```
 
 ### Manualy
 
 Clone repo into new directory `~/dotfiles`
 
-```Bash
+```PowerShell
 # Use SSH (if set up)...
 git clone git@github.com:mmatokovic/dotfiles.git ~/dotfiles
 
@@ -27,15 +35,28 @@ git clone git@github.com:mmatokovic/dotfiles.git ~/dotfiles
 git clone https://github.com/mmatokovic/dotfiles.git ~/dotfiles
 ```
 
-Create symlinks in the Home directory to the real files in the repo
+Create symlinks in the Home directory to the files on the repo
 
-```Bash
+```PowerShell
 # PowerShell in Administrator mode
 New-Item -ItemType SymbolicLink -Path $env:UserProfile -Name ".gitconfig" -Target "~/.dotfiles/gitconfig"
 New-Item -ItemType SymbolicLink -Path "~/.ideavimrc" -Target "~/dotfiles/ideavimrc.symlink"
 ```
 
-Enable hidden files on VS Code:
+## Enable hidden files
 
-1. On Windows, in VS Code, go to `File` > `Preferences` > `Settings`. To display hidden.
+VS Code:
+
+1. On Windows, in VS Code, go to `File` > `Preferences` > `Settings` to display hidden.
 2. Create a repo folder: `mkdir ~/source/repos`
+
+Windows 10:
+
+1. Open File Explorer from the taskbar.
+2. Select View > Options > Change folder and search options.
+3. Select the View tab and, in Advanced settings, select Show hidden files, folders, and drives and OK.
+
+Windows 11:
+
+1. Open File Explorer  from the taskbar. 
+2. Select View > Show > Hidden items.

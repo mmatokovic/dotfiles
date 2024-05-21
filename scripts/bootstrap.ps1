@@ -30,7 +30,6 @@ function install_dotfiles
         else
         {
             $dotname = "." + [System.IO.Path]::GetFileNameWithoutExtension($symlink.Name)
-
             $target = $symlink.FullName
             $linkPath = Join-Path -Path $env:USERPROFILE -ChildPath $dotname
 

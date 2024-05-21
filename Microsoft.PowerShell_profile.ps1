@@ -6,7 +6,6 @@ Import-Module z
 
 # Add Aliases
 New-Alias -Name fuck -Value thefuck
-New-Alias -Name cinst -Value choco install
 
 # Enable close by CTRL+D
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
