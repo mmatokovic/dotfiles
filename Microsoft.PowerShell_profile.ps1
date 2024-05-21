@@ -1,11 +1,15 @@
-# $Home\Documents\WindowsPowerShell\Microsoft. PowerShell_profile. ps1
-# notepad $PROFILE
-
+# Import posh-git module
 Import-Module posh-git
+
+# Import z module
 Import-Module z
-Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
+
+# Add Aliases
 New-Alias -Name fuck -Value thefuck
-Invoke-Expression (&starship init powershell)
+New-Alias -Name cinst -Value choco install
+
+# Enable close by CTRL+D
+Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
@@ -16,3 +20,6 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+# Init script for startship
+Invoke-Expression (&starship init powershell)

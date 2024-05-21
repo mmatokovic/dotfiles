@@ -1,11 +1,11 @@
+# Work .gitconfig
+[includeIf "gitdir:~/source/repos/crosig/"]
+    path = ~/source/repos/crosig/.gitconfig
 [user]
 	name = mmatokovic
 	email = 27929908+mmatokovic@users.noreply.github.com
 [init]
     templatedir = ~/.dotfiles/.github
-# Work .gitconfig
-[includeIf "gitdir:~/source/repos/crosig/"]
-    path = ~/source/repos/crosig/.gitconfig
 [core]
 	longpaths = true
 	editor = code --wait

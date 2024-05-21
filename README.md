@@ -6,28 +6,37 @@ _  __  /_  __ \  __/_  /_ __  /__  /_  _ \_  ___/
 \__,_/  \____/\__/ /_/    /_/  /_/  \___//____/
 ```
 
-Clone repo into new directory `~/.dotfiles`
+## Install
+
+Using bootstrap script
+
+```Bash
+Set-ExecutionPolicy RemoteSigned
+iwr https://raw.githubusercontent.com/lukesmith/dotfiles/master/script/bootstrap.ps1 -UseBasicParsing | iex
+streamline-linux
+```
+
+### Manualy
+
+Clone repo into new directory `~/dotfiles`
 
 ```Bash
 # Use SSH (if set up)...
-git clone git@github.com:mmatokovic/dotfiles.git ~/.dotfiles
+git clone git@github.com:mmatokovic/dotfiles.git ~/dotfiles
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/mmatokovic/dotfiles.git ~/.dotfiles
+git clone https://github.com/mmatokovic/dotfiles.git ~/dotfiles
 ```
 
 Create symlinks in the Home directory to the real files in the repo
 
 ```Bash
-# With CMD
-mklink ~/.dotfiles/.gitconfig ~/.gitconfig
-mklink ~/.dotfiles/Microsoft.PowerShell_profile.ps1 ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
-
-# With PowerShell
-New-Item -ItemType SymbolicLink -Path "~/.gitconfig" -Target "~/.dotfiles/.gitconfig"
+# PowerShell in Administrator mode
+New-Item -ItemType SymbolicLink -Path "~/.gitconfig" -Target "~/dotfiles/.gitconfig"
+New-Item -ItemType SymbolicLink -Path "~/.ideavimrc" -Target "~/dotfiles/.ideavimrc"
 ```
 
 Enable hidden files on VS Code:
 
-On Windows, in VS Code, go to `File` > `Preferences` > `Settings`. To display hidden.
-Create a repo folder: `mkdir ~/source/repos`
+1. On Windows, in VS Code, go to `File` > `Preferences` > `Settings`. To display hidden.
+2. Create a repo folder: `mkdir ~/source/repos`
