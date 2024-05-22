@@ -5,7 +5,7 @@
 	name = mmatokovic
 	email = 27929908+mmatokovic@users.noreply.github.com
 [init]
-    templatedir = ~/.dotfiles/.github
+    templatedir = ~/dotfiles/.github
 [core]
 	longpaths = true
 	editor = code --wait
