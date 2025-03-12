@@ -1,16 +1,41 @@
 [user]
 	name = mmatokovic
 	email = 27929908+mmatokovic@users.noreply.github.com
+[tag]
+        sort = version:refname
 [init]
     templatedir = ~/dotfiles/.github
 	defaultBranch = main
-# Work .gitconfig
 [includeIf "gitdir:~/source/repos/crosig/"]
     path = ~/source/repos/crosig/.gitconfig
 [core]
 	longpaths = true
 	editor = code --wait
 	ignorecase = false
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
 [safe]
 	directory = *
 [filter "lfs"]
@@ -18,3 +43,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	rebase = true

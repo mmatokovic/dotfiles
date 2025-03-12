@@ -15,7 +15,7 @@ Set-ExecutionPolicy RemoteSigned
 iwr https://raw.githubusercontent.com/mmatokovic/dotfiles/main/scripts/bootstrap.ps1 -UseBasicParsing | iex
 ```
 
-open "`notepad $PROFILE`" and copy content from `Microsoft.PowerShell_profile.ps1`
+Open "`notepad $PROFILE`" and copy content from `Microsoft.PowerShell_profile.ps1`
 
 Reload PowerShell profile for current prompt
 
@@ -39,7 +39,7 @@ Create symlinks in the Home directory to the files on the repo
 
 ```PowerShell
 # PowerShell in Administrator mode
-New-Item -ItemType SymbolicLink -Path $env:UserProfile -Name ".gitconfig" -Target "~/.dotfiles/gitconfig"
+New-Item -ItemType SymbolicLink -Path $env:UserProfile -Name ".gitconfig" -Target "~/.dotfiles/gitconfig.symlink"
 
 mkdir ~/.config/nvim
 New-Item -ItemType SymbolicLink -Path "~/.config/nvim/init.lua" -Target "~/dotfiles/init.lua"
@@ -47,27 +47,18 @@ New-Item -ItemType SymbolicLink -Path "~/.config/nvim/init.lua" -Target "~/dotfi
 
 ## Enable hidden files
 
-VS Code:
+### VS Code
 
 1. On Windows, in VS Code, go to `File` > `Preferences` > `Settings` to display hidden.
 2. Create a repo folder: `mkdir ~/source/repos`
 
-Nvim:
-
-Because Nvim follows the XDG |base-directories| standard, configuration on
-Windows is stored in ~/AppData instead of ~/.config. But you can still share
-the same Nvim configuration on all of your machines, by creating
-`mkdir ~/AppData/Local/nvim/` containing just this line:
-    `source ~/.config/nvim/init.vim` or `New-Item -Path . -Name "init.lua" -ItemType "file" -Value "source ~/.config/nvim/init.vim"`
-
-
-Windows 10:
+### Windows 10
 
 1. Open File Explorer from the taskbar.
 2. Select View > Options > Change folder and search options.
 3. Select the View tab and, in Advanced settings, select Show hidden files, folders, and drives and OK.
 
-Windows 11:
+### Windows 11
 
-1. Open File Explorer  from the taskbar. 
+1. Open File Explorer  from the taskbar.
 2. Select View > Show > Hidden items.

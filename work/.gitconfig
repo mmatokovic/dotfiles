@@ -1,6 +1,0 @@
-[user]
-	name = Mislav Matoković
-	email = mislav.matokovic@crosig.hr
-	
-[core]
-	sshCommand = ssh -i ~/.ssh/bitbucket_work
