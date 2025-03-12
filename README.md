@@ -38,11 +38,8 @@ git clone https://github.com/mmatokovic/dotfiles.git ~/dotfiles
 Create symlinks in the Home directory to the files on the repo
 
 ```PowerShell
-# PowerShell in Administrator mode
-New-Item -ItemType SymbolicLink -Path $env:UserProfile -Name ".gitconfig" -Target "~/.dotfiles/gitconfig.symlink"
-
-mkdir ~/.config/nvim
-New-Item -ItemType SymbolicLink -Path "~/.config/nvim/init.lua" -Target "~/dotfiles/init.lua"
+Remove-Item $env:UserProfile\.gitconfig -Force
+New-Item -ItemType HardLink -Path $env:UserProfile\.gitconfig -Target "~\dotfiles\gitconfig.symlink"
 ```
 
 ## Enable hidden files

@@ -33,9 +33,8 @@ function install_dotfiles
             $target = $symlink.FullName
             $linkPath = Join-Path -Path $env:USERPROFILE -ChildPath $dotname
 
-            New-Item -ItemType SymbolicLink -Path $linkPath -Target $target -Force
+            New-Item -ItemType HardLink -Path $linkPath -Target $target -Force
         }
     }
 }
-
 install_dotfiles
