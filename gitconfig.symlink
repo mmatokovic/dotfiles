@@ -1,8 +1,10 @@
 [user]
 	name = mmatokovic
 	email = 27929908+mmatokovic@users.noreply.github.com
+[alias]
+    fpush = push --force-with-lease
 [tag]
-        sort = version:refname
+    sort = version:refname
 [init]
     templatedir = ~/dotfiles/.github
 	defaultBranch = main
