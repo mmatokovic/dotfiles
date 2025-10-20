@@ -39,6 +39,9 @@ Create symlinks in the Home directory to the files on the repo
 
 ```PowerShell
 Remove-Item $env:UserProfile\.gitconfig -Force
+```
+
+```PowerShell
 New-Item -ItemType HardLink -Path $env:UserProfile\.gitconfig -Target "~\dotfiles\gitconfig.symlink"
 ```
 
