@@ -1,1 +1,64 @@
 set clipboard+=unnamed
+set encoding=utf8
+set secure
+set ignorecase
+set smartcase
+set incsearch
+set number
+set relativenumber
+set wrap
+set showcmd
+set cursorline
+set mouse=a
+set hidden
+set list
+set scrolloff=3
+set surround
+set easymotion
+
+set idearefactormode=keep
+set ideajoin
+
+let mapleader=" "
+
+nmap <leader>c :%s///gc<left><left><left>
+nmap <Leader>za za
+nmap <Leader>o o<Esc>
+nmap <Leader>O O<Esc>
+nmap <Leader>r :source ~./ideavimrc<CR>
+nmap <leader>t :action Terminal.OpenInTerminal<CR>
+
+nmap <Leader>h :<C-u>split<CR>
+nmap <Leader>v :<C-u>vsplit<CR>
+
+" system clipboard
+" go to the IdeaVim settings and set Ctrl+C and Ctrl+V to be handled by the IDE and not by Vim.
+vmap <leader>y "*y
+vmap <leader>d "*d
+nmap <leader>y "*yy
+nmap <leader>p "*p
+nmap <leader>P "*P
+vmap <leader>p "*p
+vmap <leader>P "*P
+
+nmap <C-a> ggVG<CR>
+nmap <S-q> ZQ
+nmap <C-t> :action ActivateTerminalToolWindow<CR>
+nmap <C-z> :action ToggleDistractionFreeMode<CR>
+nmap <C-o> :action GotoFile<CR>
+nmap U <C-r>
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-d> :q<CR>
+map <C-s> :w<CR>
+
+inoremap <C-s> <c-o>:w<cr>
+
+vmap < <gv
+vmap > >gv
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
