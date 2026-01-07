@@ -3,6 +3,7 @@
 	email = 27929908+mmatokovic@users.noreply.github.com
 [alias]
     fpush = push --force-with-lease
+	rebase = pull --rebase
 [tag]
     sort = version:refname
 [init]
@@ -14,6 +15,7 @@
 	longpaths = true
 	editor = code --wait
 	ignorecase = false
+	autocrlf = true
 [diff]
 	algorithm = histogram
 	colorMoved = plain
@@ -55,3 +57,5 @@
 	conflictstyle = zdiff3
 [pull]
 	rebase = true
+[maintenance]
+	repo = C:/Users/mmatokovic/source/repos/crosig/int-spring-project/einvoice-api
