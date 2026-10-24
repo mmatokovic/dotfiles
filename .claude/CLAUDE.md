@@ -6,8 +6,10 @@ My knowledge base is the Obsidian vault at `C:\Users\mmatokovic\Documents\llm-wi
   `python C:\Users\mmatokovic\Documents\llm-wiki\.claude\skills\wiki\scripts\search.py "<query>"`
 - When a session produces something worth keeping (a decision, a gotcha, how a system works, a fix
   that took real effort), or I say "save what we learned", write a short note to
-  `raw/notes/YYYY-MM-DD-<slug>.md` in the vault: what, why, and which project it came from.
-- Outside the vault, never edit `wiki/` or other `raw/` folders; notes get ingested in the vault.
+  `outputs/notes/YYYY-MM-DD-<slug>.md` in the vault (frontmatter `type: output`, `title`,
+  `created`, `filed: false`): what, why, and which project it came from.
+- Never write to the vault's `raw/` (mine only). Outside the vault, don't edit `wiki/` either;
+  notes get filed into the wiki in the vault.
 
 ## Language
 - Code, comments, commit messages and PR comments are in English.
