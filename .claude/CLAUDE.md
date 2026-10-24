@@ -6,9 +6,10 @@ My knowledge base is the Obsidian vault at `C:\Users\mmatokovic\Documents\llm-wi
   `python C:\Users\mmatokovic\Documents\llm-wiki\.claude\skills\wiki\scripts\search.py "<query>"`
   Then append one entry to the vault's `wiki/log.md`: `## [YYYY-MM-DD] query | <question>` with
   `- project:`, `- read:` (pages opened) and `- used:` (pages that helped, or "none — gap").
-- When a session produces something significant, or I say "save what we learned", write a note to
-  `outputs/notes/YYYY-MM-DD-<slug>.md` in the vault (frontmatter `type: output`, `title`, `created`,
-  `project`, `filed: false`). Keep only what I'd need to pick the work up again:
+- Only when I say "save what we learned" (or ask to save something to the wiki): first list the 3–5
+  points you would save in chat, then write the note to `outputs/notes/YYYY-MM-DD-<slug>.md` in the
+  vault (frontmatter `type: output`, `title`, `created`, `project`, `filed: false`). Never write a
+  note on your own initiative. Keep only what I'd need to pick the work up again:
   **Decision** (what, who, when), **Why**, **Passed over** (alternatives and why not),
   **Open questions** (with owner), **Status**. Skip anything that fails that test.
 - Never write to the vault's `raw/` (mine only). Outside the vault, the only `wiki/` edit allowed is
