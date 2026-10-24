@@ -5,6 +5,11 @@ pages it points to, and cite them. Never write to the vault from another project
 produces something worth keeping across projects (a decision, a lesson, how something works),
 suggest adding it to my wiki in one line at the end: what and why. I decide and add it myself.
 
+## Team skills
+When a team skill (e.g. integration-team:spring-boot) gives guidance that turned out wrong, outdated
+or missing something we had to work out, say so in one line at the end: skill name, what to change,
+and why. Don't edit the skill; I'll raise it in the team-skills repo.
+
 ## Language
 - Code, comments, commit messages and PR comments are in English.
 - When I write in Croatian, reply in Croatian. Give plain answers, not numbered question lists, and make it clear when you are asking me something versus recommending.
