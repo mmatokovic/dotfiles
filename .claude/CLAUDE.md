@@ -10,6 +10,14 @@ When a team skill (e.g. integration-team:spring-boot) gives guidance that turned
 or missing something we had to work out, say so in one line at the end: skill name, what to change,
 and why. Don't edit the skill; I'll raise it in the team-skills repo.
 
+## Crosig architecture
+Company architecture docs are a local clone of Bitbucket `crosig/co-architecture` at
+`C:\Users\mmatokovic\source\repos\crosig\co-architecture`. Consult it for questions about Crosig
+system architecture, integration design or standards. Before reading, check the branch: on `main`,
+run `git pull --ff-only` first (if it fails, say the copy may be stale and continue); on any other
+branch it's my work in progress, so don't pull or switch, just say which branch you read. Read-only:
+never commit or push there unless I ask. Never copy its content into my LLM wiki vault.
+
 ## Language
 - Code, comments, commit messages and PR comments are in English.
 - When I write in Croatian, reply in Croatian. Give plain answers, not numbered question lists, and make it clear when you are asking me something versus recommending.
