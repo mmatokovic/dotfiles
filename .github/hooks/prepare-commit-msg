@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# Automatically adds branch name and branch description to every commit message.
+# make it executable in using git bash: chmod +x .git/hooks/prepare-commit-msg
+
+# Path to the commit message file
+COMMIT_MSG_FILE="$1"
+
+# Extract the current branch name
+BRANCH_NAME=$(git symbolic-ref --quiet --short HEAD)
+
+# Extract JIRA ticket from branch name (e.g. ABC-123)
+JIRA_TICKET=$(echo "$BRANCH_NAME" | grep -oE '[A-Z]+-[0-9]+')
+
+# Read commit message
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# If we have a JIRA ticket AND the commit message doesn't already contain this same ticket
+if [ -n "$JIRA_TICKET" ] && ! echo "$COMMIT_MSG" | grep -q "$JIRA_TICKET"; then
+    echo "$JIRA_TICKET $COMMIT_MSG" > "$COMMIT_MSG_FILE"
+fi

@@ -1,12 +1,3 @@
-# Import posh-git module
-Import-Module posh-git
-
-# Import z module
-Import-Module z
-
-# Add Aliases
-New-Alias -Name fuck -Value thefuck
-
 # Enable close by CTRL+D
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 
@@ -21,4 +12,4 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 # Init script for startship
-Invoke-Expression (&starship init powershell)
+Invoke-Expression (@(starship init powershell --print-full-init) -join "`n")
