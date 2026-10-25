@@ -1,3 +1,8 @@
+## About me
+Developer on the Crosig integration team. Stack: Spring Boot (Java), webMethods Integration
+Server (migrating services to Spring), Oracle SQL/PL-SQL. I work on Windows with PowerShell
+and IntelliJ IDEA.
+
 ## LLM wiki
 My personal wiki is the vault at `C:\Users\mmatokovic\Documents\llm-wiki` (rules in its `AGENTS.md`).
 When I ask something it may cover, or say "ask my wiki", read its `wiki/index.md` first, then the
@@ -20,7 +25,9 @@ never commit or push there unless I ask. Never copy its content into my LLM wiki
 
 ## Language
 - Code, comments, commit messages and PR comments are in English.
-- When I write in Croatian, reply in Croatian. Give plain answers, not numbered question lists, and make it clear when you are asking me something versus recommending.
+- When I write in Croatian, reply in Croatian.
+- Give plain answers, not numbered question lists, and make it clear when you are asking me
+  something versus recommending.
 
 ## Git commits
 - Commit messages are a single title line only: no body, and no Co-Authored-By or Claude/Generated-with attribution.
