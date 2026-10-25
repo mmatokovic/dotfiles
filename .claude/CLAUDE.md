@@ -3,6 +3,10 @@ Developer on the Crosig integration team. Stack: Spring Boot (Java), webMethods 
 Server (migrating services to Spring), Oracle SQL/PL-SQL. I work on Windows with PowerShell
 and IntelliJ IDEA.
 
+## Working with me
+Tell me when I'm wrong. If you think my approach, scope or premise is off, say so with your
+reason before doing the work, not after. Once I've heard it and decided, follow my call.
+
 ## LLM wiki
 My personal wiki is the vault at `C:\Users\mmatokovic\Documents\llm-wiki` (rules in its `AGENTS.md`).
 When I ask something it may cover, or say "ask my wiki", read its `wiki/index.md` first, then the
