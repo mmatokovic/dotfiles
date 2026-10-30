@@ -45,6 +45,18 @@ Remove-Item $env:UserProfile\.gitconfig -Force
 New-Item -ItemType HardLink -Path $env:UserProfile\.gitconfig -Target "~\dotfiles\gitconfig.symlink"
 ```
 
+### VS Code settings
+
+Symlink VS Code user settings to `vscode/settings.json` (run PowerShell as **Administrator** or enable Developer Mode):
+
+```PowerShell
+$settings = "$env:APPDATA\Code\User\settings.json"
+if (Test-Path $settings) { Move-Item $settings "$settings.bak" -Force }
+New-Item -ItemType SymbolicLink -Path $settings -Target "$env:UserProfile\dotfiles\vscode\settings.json"
+```
+
+VS Code and extensions write to this file, so review `git diff` before committing and keep internal hostnames (e.g. `remote.SSH.remotePlatform`, `security.allowedUNCHosts`) out of it.
+
 ## Enable hidden files
 
 ### VS Code

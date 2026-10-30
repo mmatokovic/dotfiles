@@ -1,0 +1,471 @@
+{
+    "npm.enableScriptExplorer": true,
+    "markdown.extension.toc.levels": "2..6",
+    "workbench.colorTheme": "Solarized Dark+",
+    "editor.tabSize": 4,
+    "[javascript]": {
+      "editor.tabSize": 2
+    },
+    "[html]": {
+      "editor.tabSize": 2
+    },
+    "[json]": {
+      "editor.tabSize": 2
+    },
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "vim.commandLineModeKeyBindings": [
+
+    ],
+    "files.autoSave": "onFocusChange",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotionMarkerooundColor": "#020202",
+    "vim.normalModeKeyBindings": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<tab>"],
+        "commands": ["workbench.action.nextEditor"]
+        },
+        {
+        "before": ["<S-tab>"],
+        "commands": ["workbench.action.previousEditor"]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+        },
+        {
+        "before": ["<C-j>"],
+        "after": ["<Esc>"]
+        },
+        {
+        "before": ["<C-k>"],
+        "after": ["<Esc>"]
+        },
+        {
+        "before": ["<leader>","<leader>"],
+        "after": ["<Right>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+        "before": [">"],
+        "after": [">", "g", "v"]
+        },
+        {
+        "before": ["<"],
+        "after": ["<", "g", "v"]
+        },
+        {
+        "before": ["<leader>", "c"],
+        "commands": ["editor.action.commentLine"],
+        "when": "editorTextFocus && !editorReadonly"
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.splitEditor"]
+        },
+        {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+        "before": ["<leader>", "f"],
+        "commands": ["revealInExplorer"]
+        },
+        {
+        "before": ["<leader>", "h"],
+        "after": ["_"]
+        },
+        {
+        "before": ["<C-w>"],
+        "commands": ["workbench.action.closeActiveEditor"]
+        },
+    ],
+    "vim.leader": "<space>",
+
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        // VS Code new marker @ next occurence
+        "<C-d>": false,
+        // Copy
+        "<C-c>": false,
+        // Cut
+        "<C-x>": false,
+        // Paste
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false
+},
+"markdown-pdf.convertOnSave": true,
+"markdown-pdf.displayHeaderFooter": false,
+"editor.accessibilitySupport": "on",
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
+"workbench.startupEditor": "none",
+"latex-workshop.view.pdf.viewer": "tab",
+"[markdown]": {
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+"vim.statusBarColorControl": true,
+"vim.statusBarColors.visual": "#b55d02",
+"vim.statusBarColors.visualblock": "#a02236",
+"vim.statusBarColors.visualline": "#9C195B",
+"vim.statusBarColors.replace": "#6f1f45",
+"vim.statusBarColors.insert": "#6d8400",
+"vim.statusBarColors.normal": "#007575",
+"workbench.colorCustomizations": {
+    "statusBar.background": "#007575",
+    "statusBar.noFolderBackground": "#007575",
+    "statusBar.debuggingBackground": "#007575",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+},
+"thunder-client.codeSnippetLanguage": "js-axios",
+"git.enableSmartCommit": true,
+"code-runner.runInTerminal": true,
+"workbench.iconTheme": "vscode-icons",
+"terminal.external.windowsExec": "C:\\Users\\mmatokovic\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+"terminal.integrated.allowChords": false,
+"terminal.explorerKind": "external",
+"javascript.updateImportsOnFileMove.enabled": "always",
+"calva.paredit.defaultKeyMap": "strict",
+"calva.prettyPrintingOptions": {
+    "printEngine": "pprint",
+    "enabled": true,
+    "width": 120,
+    "maxLength": 50
+},
+"terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+        "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+        "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+        "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "JavaSE-1.8 LTS": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\.jdks\\corretto-1.8.0_472\\bin;${env:PATH}",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\.jdks\\corretto-1.8.0_472"
+        },
+        "path": "cmd"
+    },
+    "JavaSE-11 LTS": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\11\\bin;${env:PATH}",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\11"
+        },
+        "path": "cmd"
+    },
+    "JavaSE-17 LTS": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\.jdks\\ms-17.0.15\\bin;${env:PATH}",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\.jdks\\ms-17.0.15"
+        },
+        "path": "cmd"
+    },
+    "JavaSE-19": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Program Files\\Java\\jdk-19\\bin;${env:PATH}",
+            "JAVA_TOOL_OPTIONS": "-Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8",
+            "JAVA_HOME": "C:\\Program Files\\Java\\jdk-19"
+        },
+        "path": "cmd",
+        "args": [
+            "/k",
+            "chcp",
+            "65001"
+        ]
+    },
+    "JavaSE-21 LTS": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.9\\bin;${env:PATH}",
+            "JAVA_TOOL_OPTIONS": "-Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.9"
+        },
+        "path": "cmd",
+        "args": [
+            "/k",
+            "chcp",
+            "65001"
+        ]
+    },
+    "JavaSE-22": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Program Files\\Java\\jdk-22\\bin;${env:PATH}",
+            "JAVA_TOOL_OPTIONS": "-Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8",
+            "JAVA_HOME": "C:\\Program Files\\Java\\jdk-22"
+        },
+        "path": "cmd",
+        "args": [
+            "/k",
+            "chcp",
+            "65001"
+        ]
+    },
+    "JavaSE-23": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\.jdks\\openjdk-23.0.2\\bin;${env:PATH}",
+            "JAVA_TOOL_OPTIONS": "-Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\.jdks\\openjdk-23.0.2"
+        },
+        "path": "cmd",
+        "args": [
+            "/k",
+            "chcp",
+            "65001"
+        ]
+    },
+    "JavaSE-25 LTS": {
+        "overrideName": true,
+        "env": {
+            "PATH": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\latest\\bin;${env:PATH}",
+            "JAVA_TOOL_OPTIONS": "-Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8",
+            "JAVA_HOME": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\latest"
+        },
+        "path": "cmd",
+        "args": [
+            "/k",
+            "chcp",
+            "65001"
+        ]
+    }
+},
+"terminal.integrated.defaultProfile.windows": "PowerShell",
+"explorer.confirmDelete": false,
+"git.autofetch": true,
+"npm.keybindingsChangedWarningShown": true,
+"css.lint.unknownAtRules": "ignore",
+"scss.lint.unknownAtRules": "ignore",
+"[python]": {
+    "editor.formatOnType": true
+},
+"reactSnippets.settings.prettierEnabled": true,
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+},
+"redhat.telemetry.enabled": true,
+
+"emmet.includeLanguages": {
+    "phoenix-heex": "html"
+},
+"files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false,
+    "**/Thumbs.db": false
+},
+"explorer.confirmDragAndDrop": false,
+"explorer.fileNesting.enabled": true,
+"explorer.fileNesting.expand": false,
+"explorer.fileNesting.patterns": {
+    "README.md": "CONTRIBUTING.md, LICENSE*, CHANGELOG*, CODE_OF_CONDUCT.md, SECURITY.md, CLAUDE.md, AGENTS.md",
+    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock, .npmrc, .nvmrc",
+    "pom.xml": "mvnw, mvnw.cmd",
+    "application.yml": "application-*.yml",
+    "application.properties": "application-*.properties",
+    "Dockerfile": ".dockerignore",
+    "docker-compose.yml": "docker-compose.*.yml, compose.*.yml",
+    ".gitignore": ".gitattributes, .editorconfig",
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts"
+},
+"workbench.editorAssociations": {
+    "*.crt": "default"
+},
+"workbench.editor.empty.hint": "hidden",
+"vscode-pets.petSize": "medium",
+"vscode-pets.throwBallWithMouse": true,
+"security.workspace.trust.untrustedFiles": "open",
+"yaml.schemas": {
+    "file:///c%3A/Users/mmatokovic/.vscode/extensions/atlassian.atlascode-3.8.8/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+},
+"git.confirmSync": false,
+"cmake.showOptionsMovedNotification": false,
+"sqldeveloper.telemetry.enabled": false,
+"connections.tnsConfiguration.path": "C:\\Users\\mmatokovic",
+"oracledevtools.connectionConfiguration.configFilesFolder": "C:\\Users\\mmatokovic\\Oracle\\network\\admin",
+"[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    }
+},
+"oracledevtools.connectionConfiguration.walletFileFolder": "C:\\Users\\mmatokovic\\Oracle\\network\\admin",
+"oracledevtools.bookmarkFileFolder": "C:\\Users\\mmatokovic\\Oracle\\oracle.oracledevtools",
+"oracledevtools.download.otherFolder": "C:\\Users\\mmatokovic\\downloads",
+"editor.linkedEditing": true,
+"editor.rulers": [
+    {
+        "column": 80,
+        "color": "#00FF0010"
+    },
+    {
+        "column": 100,
+        "color": "#BDB76B15"
+    },
+    {
+        "column": 120,
+        "color": "#FA807219"
+    }
+],
+"editor.unicodeHighlight.includeComments": true,
+"workbench.editor.revealIfOpen": true,
+"files.eol": "\n",
+"[bat]": {
+    "files.eol": "\r\n"
+},
+"emmet.variables": {
+    "lang": "en"
+},
+"cSpell.diagnosticLevel": "Hint",
+"trailing-spaces.backgroundColor": "rgba(255,0,0,0.1)",
+"trailing-spaces.includeEmptyLines": false,
+"terminal.integrated.tabs.hideCondition": "never",
+"terminal.integrated.enablePersistentSessions": false,
+"java.compile.nullAnalysis.mode": "automatic",
+"java.configuration.detectJdksAtStart": false,
+"java.configuration.updateBuildConfiguration": "automatic",
+"java.debug.settings.hotCodeReplace": "auto",
+"java.dependency.packagePresentation": "hierarchical",
+"java.maxConcurrentBuilds": 16,
+"java.sources.organizeImports.staticStarThreshold": 1,
+"[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+},
+"java.configuration.runtimes": [
+    {
+        "name": "JavaSE-1.8",
+        "path": "C:\\Users\\mmatokovic\\.jdks\\corretto-1.8.0_472"
+    },
+    {
+        "name": "JavaSE-11",
+        "path": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\11"
+    },
+    {
+        "name": "JavaSE-17",
+        "path": "C:\\Users\\mmatokovic\\.jdks\\ms-17.0.15"
+    },
+    {
+        "name": "JavaSE-19",
+        "path": "C:\\Program Files\\Java\\jdk-19"
+    },
+    {
+        "name": "JavaSE-21",
+        "path": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.9"
+    },
+    {
+        "name": "JavaSE-22",
+        "path": "C:\\Program Files\\Java\\jdk-22"
+    },
+    {
+        "name": "JavaSE-23",
+        "path": "C:\\Users\\mmatokovic\\.jdks\\openjdk-23.0.2"
+    },
+    {
+        "name": "JavaSE-25",
+        "path": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\latest",
+        "default": true
+    }
+],
+"terminal.integrated.automationProfile.windows": {
+    "path": "cmd"
+},
+"java.test.config": {
+    "vmArgs": [
+        "-Dstdout.encoding=UTF-8",
+        "-Dstderr.encoding=UTF-8"
+    ]
+},
+"terminal.integrated.env.windows": {
+    "JAVA_HOME": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.6-1",
+    "PATH": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.6-1\\bin;${env:PATH}"
+},
+"maven.terminal.customEnv": [
+    {
+        "environmentVariable": "JAVA_HOME",
+        "value": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.6-1"
+    }
+],
+"java.import.gradle.java.home": "C:\\Users\\mmatokovic\\.jdks\\corretto-21.0.6-1",
+"maven.executable.path": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\maven\\latest\\bin\\mvn",
+"java.import.gradle.home": "C:\\Users\\mmatokovic\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\gradle\\latest",
+"sqldeveloper.connections.tnsConfiguration.path": "C:\\Users\\mmatokovic",
+"sqldeveloper.sqlHistory.historyLimit": 500,
+"sqldeveloper.database.nls.territory": "CROATIA",
+"[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+},
+"[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"git.ignoreRebaseWarning": true,
+"sqldeveloper.datagrid.fontFamily": "Consolas, 'Courier New', monospace",
+"terminal.integrated.enableVisualBell": true,
+"claudeCode.preferredLocation": "panel",
+"window.menuBarVisibility": "compact",
+"claudeCode.hideOnboarding": true,
+}
